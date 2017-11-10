@@ -1,0 +1,51 @@
+{
+  "name": "sportdec-challenge",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "ejs": "2.5.7",
+    "github-api": "^3.0.0",
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.1.0",
+    "grunt-contrib-coffee": "2.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-cssmin": "2.2.1",
+    "grunt-contrib-jst": "1.0.0",
+    "grunt-contrib-less": "1.4.1",
+    "grunt-contrib-uglify": "3.1.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-sails-linker": "~1.0.4",
+    "grunt-sync": "0.7.0",
+    "include-all": "^4.0.3",
+    "lodash": "^4.17.4",
+    "node-twitter-api": "^1.8.0",
+    "open": "0.0.5",
+    "rc": "1.2.2",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "sails": "~0.12.14",
+    "sails-disk": "~0.10.10"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "standard": "^10.0.3",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js",
+    "start:watch": "nodemon app.js && watchify index.js -o assets/js/index-built.js",
+    "lint": "./node_modules/.bin/eslint .",
+    "dev": "npm run lint && npm run start:watch && watchify index.js -o assets/js/index-built.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hugo/sportdec-challenge.git"
+  },
+  "author": "hugo",
+  "license": "MIT"
+}
